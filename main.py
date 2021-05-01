@@ -111,15 +111,15 @@ def main():
         EXTENSION = 'mp3'
         filename = get_filenames(MP3_DIRECTORY, EXTENSION)[0]
         BUCKET = 'bucket-for-audio-1234'
-        print("Uploading file to S3... ", end = "")
+        print("\nUploading file to S3... ", end = "")
         file_uploaded = upload_file(filename, BUCKET, hashed_filename)  # pass filename_hash
-        print("DONE")
+        print("DONE\n")
         delete_downloads()
         if file_uploaded:
-            print(f"Video uploaded successfully to s3 bucket: {BUCKET}.")
+            print(f"Video uploaded successfully to s3 bucket: {BUCKET}.\n")
             print("Calculating Sentiments - This may take several minutes")
             sentiments = process_sentiment(hashed_filename)
-            print("DONE")
+            print("DONE\n")
             print(sentiments)
             return sentiments
         else:
