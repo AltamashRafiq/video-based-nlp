@@ -6,7 +6,7 @@ The purpose of this project is to create a solution on AWS where the user will h
 
 # Team Members
 
-[Altamash Rafiq](https://github.com/AltamashRafiq)
-[Abhishek Baral](https://github.com/abaral121)
-[Amandeep Rathee](https://github.com/arathee2)
+[Altamash Rafiq](https://github.com/AltamashRafiq)  
+[Abhishek Baral](https://github.com/abaral121)   
+[Amandeep Rathee](https://github.com/arathee2)  
 Abhiraj Vinnakota
