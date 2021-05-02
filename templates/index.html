@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="{{url_for('static', filename = 'styling/general-style.css')}}">
+		<title>Video-based NLP</title>
+		<style>
+			input:focus, textarea:focus, select:focus{
+				outline: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="home" align=middle>
+			<p> Enter the URL of a YouTube video and get its sentiment. </p>
+    		<form action="url_for(sentiments)" method="post">
+    			<div class="textbox">
+        			<input type="text" name = "url" value="" required = "required"></input>
+        		</div>
+        		
+        		<input type="submit" value="Submit" class="button"></input>
+    		</form>
+		</div>
+	</body>
+</html>
